@@ -1,30 +1,14 @@
 #include<stdio.h>
 int main()
 {
-	int x,y;
-	printf("Enter the x and y coordinates of the point : ");
-	scanf("%d %d",&x,&y);
-	if(x==0 && y==0)
-	{
-		printf("The point lies on the origin");
-	}
-	else
-	{
-		if(x==0 && y!=0)
-		{
-			printf("The point lies on the y-axis");
-		}
-		else
-		{
-			if(x!=0 && y==0)
-			{
-				printf("The point lies on the x-axis");
-			}
-			else
-			{
-				printf("The neither lies on any axis nor on origin");
-			}
-		}
-	}
-	return 0;
+	int r,s,a;
+	printf("Enter the age of Ram, Shayam and Ajay :");
+	scanf("%d %d %d",&r,&s,&a);
+	if(r<s && r<a)
+	 printf("Ram is the youngest");
+	if(s<r && s<a)
+	 printf("Shayam is the youngest");
+	if(a<s && a<r)
+	 printf("Ajay is the youngest");  
+	 return 0;
 }
